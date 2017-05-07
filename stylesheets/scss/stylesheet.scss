@@ -1,0 +1,451 @@
+@import 'scss/font-awesome.scss';
+
+@mixin headline-styling {
+
+	.category {
+		margin-top: 10px;
+		text-align: center;
+		color: #FF0500 !important; 
+
+		a {
+			font-weight: bold;
+		}
+	}
+	
+	a {
+		font-size: 22px;
+	}
+
+	h3 {
+		text-align: center;
+		font-weight: 500 !important;
+	}
+}
+
+.body {
+	color: #181818;
+	font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
+}
+
+.navbar-brand {
+	background: url("http://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/sprite-logo.svg") -272px 13px/442px no-repeat #FF0500;
+	height: 60px;
+	width: 60px;
+}
+
+.container-fluid {
+	margin-left: -20px;
+	margin-right: -20px;
+}
+
+.navbar {
+	padding: 0;
+}
+
+.navbar-nav {
+
+	a {
+		color: white !important;
+		font-weight: 700 !important;
+		font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
+		font-size: 14px !important;
+		letter-spacing: 1.5px;
+		text-transform: uppercase;
+
+		&:hover {
+			color: #666 !important;
+		}
+	}
+}
+
+#icon {
+	display: flex;
+	flex-direction: row;
+
+	img {
+		border-radius: 50%;
+	}
+}
+
+.border-bottom-red {
+	border-bottom: 3px solid red;
+}
+
+.border-bottom {
+	border-bottom: 1px solid gray;
+}
+
+.border-left {
+	border-left: 1px solid gray;
+}
+
+.margin-right {
+	margin-right: 20px;
+}
+
+.block-title {
+    font: 21px/22px Georgia,"Times New Roman",Times,serif;
+    color: #FF0500;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.no-border {
+	border: none !important;
+}
+
+.border-right {
+	border-right: 1px solid lightgray;
+}
+
+.headlines {
+
+	ul {
+
+		li {
+			list-style: square;
+			color: #FF0500;
+			border-bottom: 1px solid gray;
+			padding-bottom: 10px;
+			margin-bottom: 10px;
+
+			a {
+				color: black;
+				font-weight: 600;
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+.headlinebtn {
+	background-color: #E5E5E5;
+	color: #757575;
+	font-size: 16px;
+	line-height: 50px;
+	font-weight: 700;
+	padding: 20px 50px;
+}
+
+.seeall {
+
+}
+
+.category {
+	margin-bottom: 5px;
+	
+	a {
+		color: #FF0500;
+		font-size: 22px;
+		letter-spacing: 1px;
+		font-weight: 700;
+		line-height: 20px;
+		text-transform: uppercase;
+		font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
+	}
+}
+
+.info {
+	padding-right: 90px;
+	padding-left: 90px;
+	padding-top: 16px;
+
+	h2 {
+		font-size: 42px;
+		line-height: 38px;
+		letter-spacing: -0.25px;
+		font-weight: 900;
+		text-transform: uppercase;
+		text-align: center;
+
+		a {
+			color: inherit;
+		}
+	}
+}
+
+.summary {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.35rem;
+	font-family: Georgia,"Times New Roman",Times,serif;
+}
+
+.bullet {
+	list-style: square;
+	color: #00B7FF;
+
+	a {
+		color: black;
+		font-weight: 500 !important;
+		font-size: 14px !important;
+	}
+}
+
+.sub-headline {
+	@include headline-styling; 
+}
+
+.sponsor {
+	margin-top: 10px;
+	text-align: center;
+	color: tiel !important;
+}
+
+.stories {
+	@include headline-styling;
+
+	.summary {
+		font-size: 1.15rem;
+	}
+}
+
+.deco {
+	display: block;
+	content: "";
+	width: 100%;
+	height: 3px;
+	background-color: #FF0500;
+	position: absolute;
+	bottom: 3px;
+	left: 0;
+	right: 0;
+}
+
+.text {
+	display: inline-block;
+	background-color: #fff;
+	padding: 0 20px;
+	position: relative;
+	width: 100%;
+	text-align: center !important;
+}
+
+.slideshow {
+	background-color: #282828;
+
+	.blue {
+		color: #00B7FF;
+		font-size: 19px;
+	}
+
+	.slideshow-info {
+		margin-top: 20px;
+		
+		a {
+			background-color: #00B7FF;
+			color: white;
+			font-size: 16px;
+			padding: 5px 10px;
+			margin-top: 10px;
+		}
+
+		ul {
+			margin-top: 10px;
+			padding-left: 0;
+		}
+
+		div {
+			color: #999;
+		}
+	}
+}
+
+.current-headline {
+	margin-top: 50px;
+
+	label {		
+
+		span {
+			font-weight: bold;
+			background-color: #FF0500;
+			color: #fff;
+			text-align: center;
+			height: 36px;
+			line-height: 36px;
+			padding: 0rem 2rem;
+			text-transform: uppercase;
+			border-radius: 2px;
+			box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+		}
+	}
+
+	time {
+		padding: 15px 0 45px;
+		font-size: 42px;
+		line-height: 42px;
+		text-transform: uppercase;
+		font-weight: 900;
+		text-align: center;
+	}
+}
+
+.current-issue {
+
+	a {
+		font: 30px/30px Georgia,"Times New Roman",Times,serif;
+		text-transform: uppercase;
+		color: inherit;
+		display: block;
+	}
+
+	span {
+		font-size: 15px;
+		color: #181818;
+		line-height: 16px;
+		margin-top: 15px;
+		letter-spacing: 1.86px;
+		text-transform: uppercase;
+	}
+
+	ul {
+		padding-left: 15px;
+
+		li {
+			color: #FF0500;
+			border-bottom: 1px solid lightgray;
+			padding: 20px 0;
+
+			a {
+				color: black;
+			}
+		}
+	}
+
+	.seeall {
+
+		a {
+			padding: 10px 20px;
+			color: #757575;
+			background-color: #E5E5E5;
+			font-size: 16px;
+			display: inline-block;
+		}
+	}
+
+	.middle {
+
+		div {
+			color: #FF0500;
+			margin-top: 20px;
+		}
+	}
+
+	.most-read {
+		border-left: 1px solid lightgray;
+
+		a {
+			font: bold 16px/29px "Source Sans Pro",Arial,Helvetica,sans-serif;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+		}
+	}
+
+	.item-images {
+
+		.row {
+			border-bottom: 1px solid lightgray;
+			padding: 5px 0;
+		}
+
+		a {
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 20px;
+		}
+	}
+}
+
+footer {
+	background-color: #181818;
+
+	.col-md-3 {
+		border-right: 1px solid lightgray;
+	}
+
+	.menu {
+		margin: 20px 0 0 40px;
+
+		ul {
+			list-style: none;
+
+			li {
+				margin-top: 10px;
+
+				a {
+					color: white;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	.copyright {
+		font-size: 14px;
+		line-height: 18px;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+		color: #555;
+	}
+}
+
+.social-media {
+
+	ul {
+		list-style: none;
+
+		a {
+			text-decoration: none;
+		}
+	}
+
+	i {
+		width: 44px;
+		height: 44px;
+		border: 1px solid white;
+		border-radius: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	
+		&:hover {
+			border: 1px solid gray;
+			color: gray;
+		}
+	}
+}
+
+.fa-facebook-f {
+	color: white;
+}
+
+.fa-twitter {
+	color: white;
+}
+
+.fa-google-plus {
+	color: white;
+}
+
+.fa-tumblr {
+	color: white;
+}
+
+.fa-linkedin {
+	color: white;
+}
+
+.fa-instagram {
+	color: white;
+}
+
+.social-media-btn {
+	color: white;
+	background-color: #00B7FF;
+	font-size: 16px;
+  line-height: 50px;
+  font-weight: bold;
+}
