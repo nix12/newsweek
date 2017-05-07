@@ -2592,22 +2592,26 @@ footer {
     letter-spacing: 1.5px;
     color: #555; }
 
-.social-media ul {
-  list-style: none; }
-  .social-media ul a {
-    text-decoration: none; }
-.social-media i {
-  width: 44px;
-  height: 44px;
-  border: 1px solid white;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center; }
-  .social-media i:hover {
-    border: 1px solid gray;
-    color: gray; }
+.social-media {
+  padding: 20px; }
+  .social-media ul {
+    list-style: none; }
+    .social-media ul li {
+      margin-left: 10px; }
+    .social-media ul a {
+      text-decoration: none; }
+  .social-media i {
+    width: 44px;
+    height: 44px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+    .social-media i:hover {
+      border: 1px solid gray;
+      color: gray; }
 
 .fa-facebook-f {
   color: white; }
@@ -2632,6 +2636,34 @@ footer {
   background-color: #00B7FF;
   font-size: 16px;
   line-height: 50px;
-  font-weight: bold; }
+  font-weight: bold;
+  padding: 10px 40px;
+  margin-right: 20px; }
+
+.recent-issues .bullet {
+  color: white; }
+.recent-issues ul {
+  padding-left: 0; }
+  .recent-issues ul li {
+    list-style: none; }
+    .recent-issues ul li a {
+      color: #555; }
+
+.display-title {
+  font: 28px/30px Georgia,"Times New Roman",Times,serif;
+  padding: 15px 0;
+  color: white; }
+
+.browse-btn {
+  width: 204px;
+  text-align: center;
+  font-weight: 600; }
+  .browse-btn a {
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px; }
+    .browse-btn a:hover {
+      color: gray;
+      border: 1px solid gray; }
 
 /*# sourceMappingURL=stylesheet.css.map */

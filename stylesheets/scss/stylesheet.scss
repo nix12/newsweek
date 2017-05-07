@@ -392,9 +392,14 @@ footer {
 }
 
 .social-media {
+	padding: 20px;
 
 	ul {
 		list-style: none;
+
+		li {
+			margin-left: 10px;
+		}
 
 		a {
 			text-decoration: none;
@@ -448,4 +453,48 @@ footer {
 	font-size: 16px;
   line-height: 50px;
   font-weight: bold;
+  padding: 10px 40px;
+  margin-right: 20px;
+}
+
+.recent-issues {
+
+	.bullet {
+		color: white;
+	}
+	
+	ul {
+		padding-left: 0;
+
+		li {
+			list-style: none;
+
+			a {
+				color: #555;
+			}
+		}
+	}
+}
+
+.display-title {
+	font: 28px/30px Georgia,"Times New Roman",Times,serif;
+	padding: 15px 0;
+	color: white;
+}
+
+.browse-btn {
+	width: 204px;
+	text-align: center;
+	font-weight: 600;
+
+	a {
+		border: 1px solid white;
+		color: white;
+		padding: 10px 20px;
+
+		&:hover {
+			color: gray;
+			border: 1px solid gray;
+		}
+	}
 }
